@@ -3,7 +3,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { BsWindow } from "react-icons/bs";
 const About = () => {
   return (
-    <section className="h-[90vh] bg-dark-2 p-28">
+    <section id="about" className="h-[90vh] bg-dark-2 p-28">
       <div className="flex flex-col items-center">
         <h1 className="font-serif text-5xl text-light-1 ">About Me</h1>
         <div className="mt-2 h-2.5 w-52 rounded-xl bg-cta text-cta"></div>
