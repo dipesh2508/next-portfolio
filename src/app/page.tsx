@@ -1,8 +1,11 @@
 import Hero from '@/components/home/Hero'
-import Image from 'next/image'
+import About from '@/components/home/About'
 
 export default function Home() {
   return (
+    <>
     <Hero />
+    <About />
+    </>
   )
 }
