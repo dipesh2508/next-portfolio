@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Caudex, Montserrat } from 'next/font/google'
 import './globals.css'
 
+import Script from 'next/script'
+
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 const caudex = Caudex({ 
@@ -22,7 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}, ${caudex.variable}`}>{children}</body>
+      <body className={`${montserrat.className}, ${caudex.variable}`}>{children}
+      <Script src="path/to/particles.min.js"></Script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></Script>
+      </body>
     </html>
   )
 }

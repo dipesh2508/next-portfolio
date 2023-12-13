@@ -30,12 +30,12 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      color: {
+      colors: {
           'primary': '#17B890',
           'secondary': '#66D7D1',
           'cta': '#8B5FBF',
-          'bg-1': '#181616',
-          'bg-2': '#1E1E1E',
+          'dark-1': '#181616',
+          'dark-2': '#1E1E1E',
           'light-1': '#F2F2F2',
           glassmorphism: "rgba(16, 16, 18, 0.60)",
       },
