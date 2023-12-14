@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 import React from "react";
 
 const SkillTab = ({ skill }: { skill: string }) => {
-  return <div className={cn("py-2 px-3 bg-dark-1 m-1 grow rounded-lg text-sm text-light-1 font-thin",
+  return <div className={cn("py-2 px-2 md:px-3 bg-dark-1 m-0.5 md:m-1 grow rounded-lg text-xs md:text-sm text-light-1 font-thin",
   skill === 'Tailwind CSS' && 'border border-sky-500/60',
   skill === 'JavaScript' && 'border border-yellow-500/60',
   skill === 'React JS' && 'border border-blue-500/60',
