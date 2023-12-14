@@ -33,7 +33,7 @@ const Hero = () => {
             <Button variant="cta">Let&#39;s Talk</Button>{" "}
           </div>
         </div>
-        <div className="flex mx-8 items-center h-72 w-72 -mt-16 md:mt-0 md:mx-0 md:ml-16 md:h-[500px] md:w-[500px]">
+        <div className="flex mx-8 justify-center items-center h-72 w-72 -mt-16 md:mt-0 md:mx-0 md:ml-16 md:h-[500px] md:w-[500px]">
           {" "}
           <Image src={hero} alt="dipesh" />
         </div>
