@@ -28,7 +28,7 @@ const Hero = () => {
             the user&#39;s senses.
           </div>
           <div className="mt-8 flex flex-row justify-center gap-3 md:justify-end md:gap-8">
-            {" "}
+            {/* Buttons */}
             <Button>Download CV</Button>
             <Button variant="cta">Let&#39;s Talk</Button>{" "}
           </div>

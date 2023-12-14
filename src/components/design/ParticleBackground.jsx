@@ -1,32 +1,40 @@
-"use client"
+"use client";
+
+// Importing necessary hooks and components from react and tsparticles
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { Container } from "@tsparticles/engine";
 
+// Define the ParticleBackground component
 const ParticleBackground = () => {
-    const [init, setInit] = useState(false);
+  // State to track if particles engine is initialized
+  const [init, setInit] = useState(false);
 
+  // Use useEffect to initialize particles engine on component mount
   useEffect(() => {
+    // Initialize particles engine
     initParticlesEngine(async (engine) => {
-
+      // Load slim version of particles
       await loadSlim(engine);
     }).then(() => {
+      // Set init state to true after particles engine is initialized
       setInit(true);
     });
-  }, []);
+  }, []); // Empty dependency array ensures this runs only on mount and not on updates
 
+  // Function to be called when particles are loaded
   const particlesLoaded = (container) => {
     console.log(container);
   };
 
+  // Define the options for the particles
   const options = useMemo(
     () => ({
-    background: {
+      background: {
         color: {
           value: "#181616",
         },
-    },
+      },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -86,23 +94,25 @@ const ParticleBackground = () => {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
-  if (init) {
-  return (
-    <div className="absolute -z-1">
 
-    
-    <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
-      </div> 
-  )
+  // If the particles engine is initialized, render the particles
+  if (init) {
+    return (
+      // Create a div with absolute positioning and a z-index of -1 to place it behind other content
+      <div className="-z-1 absolute">
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+      </div>
+    );
   }
 
-  return <></>;
-}
+  // If the particles engine is not initialized, render a div with a dark background
+  return <div className="bg-dark-1"></div>;
+};
 
-export default ParticleBackground
+export default ParticleBackground;
