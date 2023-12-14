@@ -9,7 +9,7 @@ import {
 
 const Skills = () => {
   return (
-    <section id="skills" className="h-auto pt-12 p-8 md:p-24">
+    <section id="skills" className="h-auto p-8 md:px-24 md:py-16">
       <div className="flex flex-col items-center">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           What I know

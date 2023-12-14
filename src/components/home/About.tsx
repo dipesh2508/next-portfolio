@@ -14,7 +14,7 @@ const About = () => {
       <div className="mt-6 grid grid-cols-1 md:mt-12 md:grid-cols-4">
         <div className="col-span-1 mt-2 flex flex-col items-center md:mt-10">
           <div className="font-serif text-5xl text-light-1 md:text-9xl">
-            1.5+
+            1+
           </div>
           <div className="mt-4 flex flex-col items-center font-serif text-xl font-semibold text-light-1 md:text-4xl">
             <div className="flex flex-row items-center gap-2 md:flex-col ">

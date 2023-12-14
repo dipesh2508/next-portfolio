@@ -15,10 +15,12 @@ export const backEndData = [
   "Node JS",
   "Express JS",
   "MongoDB",
-  "Next Server Actions",
-  "GraphQL",
   "Firebase",
   "Prisma",
+  "Next Server Actions",
+  "GraphQL",
+
+
   "Next Auth"
 ];
 
