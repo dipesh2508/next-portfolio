@@ -1,7 +1,7 @@
 "use client"
 import { testimonialData } from "@/constants/testimonials";
 import TestimonialCard from "@/components/ui/testimonialCard";
-
+import { useState, useEffect } from "react";
 import {Pagination, Autoplay} from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,16 +11,23 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-// const screen = window.screen.width;
-let slidesPerView = 3;
-
-// if (screen <= 640) {
-//   slidesPerView = 1;
-// }
-
 const Testimonials = () => {
+
+    const [slidesPerView, setSlidesPerView] = useState(3);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setSlidesPerView(window.innerWidth <= 640 ? 1 : 3); // Update based on width
+      };
+      window.addEventListener("resize", handleResize);
+      handleResize(); // Initial call to set slidesPerView
+  
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
   return (
-    <section className="p-24">
+    <section className="p-8 md:p-24">
       <div className="flex flex-col items-center mb-12">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           Testimonials
