@@ -1,5 +1,5 @@
 import Ankit from "@/assets/Testimonials/ankit.jpg";
-import Isheta from "@/assets/Testimonials/isheta.jpg";
+import Isheta from "@/assets/Testimonials/isheta.png";
 import Kislay from "@/assets/Testimonials/kislay.png";
 import Lavanya from "@/assets/Testimonials/kislay.png";
 import Mayank from "@/assets/Testimonials/kislay.png";
