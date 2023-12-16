@@ -1,10 +1,10 @@
 import Ankit from "@/assets/Testimonials/ankit.jpg";
 import Isheta from "@/assets/Testimonials/isheta.png";
 import Kislay from "@/assets/Testimonials/kislay.png";
-import Lavanya from "@/assets/Testimonials/kislay.png";
+import Lavanya from "@/assets/Testimonials/lavanya.jpeg";
 import Mayank from "@/assets/Testimonials/kislay.png";
 import Ashutosh from "@/assets/Testimonials/kislay.png";
-import Sarthak from "@/assets/Testimonials/kislay.png";
+import Sarthak from "@/assets/Testimonials/sarthak.jpeg";
 
 export interface ITestimonialData {
   avatar: any;
