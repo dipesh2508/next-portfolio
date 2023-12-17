@@ -12,8 +12,8 @@ const TestimonialCard = ({
   review: string;
 }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 bg-dark-2 px-4 h-72 md:h-64 text-light-1 opacity-95 mb-12 rounded-3xl py-6">
-      <div className="md:col-span-1 text-center m-auto w-auto md:flex content-center items-center justify-center md:mb-12 md:w-16">
+    <div className="grid grid-cols-1 md:grid-cols-4 bg-dark-2 px-4 h-72 md:h-64 min-h-full text-light-1 opacity-95 mb-12 rounded-3xl py-6">
+      <div className="md:col-span-1 text-center m-auto w-auto md:m-0 md:flex content-center items-center justify-center md:mb-12 md:w-16">
         <Image src={avatar} alt="" className="h-16 w-16 rounded-full" />
       </div>
       <div className="col-span-3 text-primary md:-ml-4 text-xs md:text-sm font-thin">
