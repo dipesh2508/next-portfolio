@@ -5,7 +5,7 @@ import ProjectsCard from "@/components/ui/projectCard";
 // Define the Projects component
 const Projects = () => {
   return (
-    <section id="skills" className="h-auto p-8 md:px-24 md:py-8">
+    <section id="projects" className="h-auto p-8 md:px-24 md:py-8">
       <div className="flex flex-col items-center">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           What I&#39;ve Made

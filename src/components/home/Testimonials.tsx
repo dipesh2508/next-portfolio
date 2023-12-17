@@ -27,7 +27,7 @@ const Testimonials = () => {
 
 
   return (
-    <section className="p-8 md:p-24">
+    <section id="testimonials" className="p-8 md:p-24">
       <div className="flex flex-col items-center mb-12">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           Testimonials
