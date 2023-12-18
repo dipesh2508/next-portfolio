@@ -4,6 +4,7 @@ import Skills from '@/components/home/Skills'
 import Projects from '@/components/home/Projects'
 import Testimonials from '@/components/home/Testimonials'
 import Navbar from '@/components/shared/Navbar'
+import Footer from '@/components/shared/Footer'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
     <Skills />
     <Projects />
     <Testimonials />
+    < Footer />
     </>
   )
 }

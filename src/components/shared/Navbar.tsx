@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed left-8 right-8 top-8 z-10 mx-auto flex flex-col items-center justify-center rounded-2xl bg-dark-2 p-3 md:p-5 px-12 text-primary opacity-90 md:left-0 md:right-0 md:w-fit md:flex-row ">
+    <div className="fixed left-8 right-8 top-8 z-10 mx-auto flex flex-col items-center justify-center rounded-2xl bg-dark-2 p-3 px-12 text-primary opacity-90 md:left-0 md:right-0 md:w-fit md:flex-row md:p-5 ">
       <button
         data-collapse-toggle="navbar-default"
         type="button"
