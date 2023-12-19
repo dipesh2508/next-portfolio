@@ -29,11 +29,14 @@ const Hero = () => {
           </div>
           <div className="mt-8 flex flex-row justify-center gap-3 md:justify-end md:gap-8">
             {/* Buttons */}
-            <Button>Download CV</Button>
+            <a href="/resume.pdf" download>
+              {" "}
+              <Button>Download CV</Button>
+            </a>
             <Button variant="cta">Let&#39;s Talk</Button>{" "}
           </div>
         </div>
-        <div className="flex mx-8 justify-center items-center h-72 w-72 -mt-16 md:mt-0 md:mx-0 md:ml-16 md:h-[500px] md:w-[500px]">
+        <div className="mx-8 -mt-16 flex h-72 w-72 items-center justify-center md:mx-0 md:ml-16 md:mt-0 md:h-[500px] md:w-[500px]">
           {" "}
           <Image src={hero} alt="dipesh" />
         </div>
