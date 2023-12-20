@@ -1,3 +1,4 @@
+// Import images for testimonials
 import Ankit from "@/assets/Testimonials/ankit.jpg";
 import Isheta from "@/assets/Testimonials/isheta.png";
 import Kislay from "@/assets/Testimonials/kislay.png";
@@ -6,10 +7,11 @@ import Mayank from "@/assets/Testimonials/kislay.png";
 import Ashutosh from "@/assets/Testimonials/kislay.png";
 import Sarthak from "@/assets/Testimonials/sarthak.jpeg";
 
+// Define the shape of the testimonial data
 export interface ITestimonialData {
-  avatar: any;
-  name: string;
-  review: string;
+  avatar: any; // The avatar image of the person giving the testimonial
+  name: string; // The name of the person giving the testimonial
+  review: string; // The text of the testimonial
 }
 
 export const testimonialData: ITestimonialData[] = [

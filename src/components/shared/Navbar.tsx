@@ -32,6 +32,8 @@ const Navbar = () => {
           />
         </svg>
       </button>
+      {/* Map over the navLinks array and render a Link component for each item */}
+      {/* These links are hidden on small screens and visible on medium and larger screens */}
       {navLinks.map((link, key) => (
         <Link
           key={key}
@@ -42,6 +44,8 @@ const Navbar = () => {
         </Link>
       ))}
 
+      {/* If the navigation menu is open, render a div with the navigation links */}
+      {/* This div is displayed on small screens and hidden on medium and larger screens */}
       {isOpen && (
         <div className="z-10 mt-3 flex w-full flex-col bg-dark-2 px-3 py-4 text-center text-base font-semibold md:hidden">
           {navLinks.map((data) => (
