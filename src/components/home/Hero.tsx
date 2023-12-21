@@ -3,6 +3,7 @@ import { whisper } from "@/lib/fonts/font";
 import Image from "next/image";
 import hero from "@/assets/Hero.png";
 
+import React from "react";
 import ParticleBackground from "@/components/design/ParticleBackground";
 
 const Hero = () => {
@@ -29,7 +30,7 @@ const Hero = () => {
           </div>
           <div className="mt-8 flex flex-row justify-center gap-3 md:justify-end md:gap-8">
             {/* Buttons */}
-            <a href="/public/resume.pdf" download>
+            <a href={"/Resume.pdf"} download="resume_dipesh.pdf">
               {" "}
               <Button>Download CV</Button>
             </a>
