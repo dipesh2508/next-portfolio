@@ -3,7 +3,7 @@ import Ankit from "@/assets/Testimonials/ankit.jpg";
 import Isheta from "@/assets/Testimonials/isheta.png";
 import Kislay from "@/assets/Testimonials/kislay.png";
 import Lavanya from "@/assets/Testimonials/lavanya.jpeg";
-import Mayank from "@/assets/Testimonials/kislay.png";
+import Mayank from "@/assets/Testimonials/mayank.jpg";
 import Ashutosh from "@/assets/Testimonials/kislay.png";
 import Sarthak from "@/assets/Testimonials/sarthak.jpeg";
 
@@ -40,17 +40,18 @@ export const testimonialData: ITestimonialData[] = [
       "Dipesh is an exceptional senior who possesses remarkable qualities. He is hardworking, passionate, and perpetually curious, with a genuine thirst for knowledge. Dipesh's skills are impressive, and he has consistently provided me with the right guidance. I'm grateful for his support and confident in his future success.",
   },
   {
-    avatar: Mayank,
-    name: "Mayank Raj",
-    review:
-      "Dipesh is one whom I know for the last decade as a friend, and as a skilled developer for about 5 years. We both have learnt most of the coding and dev skills together. He's very skilled in Web dev through React and is experienced in Python and C++. It has always been a great and fun learning experience with him.",
-  },
-  {
     avatar: Sarthak,
     name: "Sarthak Chauhan",
     review:
       "The attention to detail that dipesh puts up in his work is exceedingly second to none, in a brief spell where we have collaborated, he has been instrumental in aiding me with absolutely best quality of work and I truly appreciate the dedication and punctuality with which he does his work.",
   },
+  {
+    avatar: Mayank,
+    name: "Mayank Raj",
+    review:
+      "Dipesh is one whom I know for the last decade as a friend, and as a skilled developer for about 5 years. We both have learnt most of the coding and dev skills together. He's very skilled in Web dev through React and is experienced in Python and C++. It has always been a great and fun learning experience with him.",
+  },
+
   {
     avatar: Ashutosh,
     name: "Ashutosh Kumar",
