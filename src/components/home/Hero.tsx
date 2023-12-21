@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
           <div className="mt-8 flex flex-row justify-center gap-3 md:justify-end md:gap-8">
             {/* Buttons */}
-            <a href="/resume.pdf" download>
+            <a href="/public/resume.pdf" download>
               {" "}
               <Button>Download CV</Button>
             </a>
