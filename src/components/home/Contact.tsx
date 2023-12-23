@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="mt-1 h-1.5 w-28 rounded-xl bg-cta text-cta md:mt-2 md:h-2.5 md:w-52"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="ml-20 mt-6">
+        <div className="mx-8 md:ml-20 mt-6 order-2 md:order-1">
           <h3 className="text-left text-xl font-light text-light-1">
             CONTACT INFO
           </h3>
@@ -86,7 +86,7 @@ const Contact = () => {
                 </h5>
               </div>
             </div>
-            <div className="mt-6 flex flex-row gap-6">
+            <div className="mt-6 flex flex-row gap-6 items-center m-auto md:m-0">
               <Link href="https://www.instagram.com/dipesh_ranjan07">
                 <FaInstagram className="h-8 w-8 text-secondary hover:text-cta" />
               </Link>
@@ -105,7 +105,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 mx-12">
+        <div className="col-span-2 mt-8 md:mt-0 mx-6 md:mx-12 order-1 md:order-2">
           <form
             ref={form}
             onSubmit={sendEmail}

@@ -39,7 +39,7 @@ export const designData = [
 export const otherData = [
   "Git",
   "Docker",
-  "Vercel",
+  "SEO",
   "C++",
   "Python",
   "Java",
