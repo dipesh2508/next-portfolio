@@ -4,7 +4,7 @@ import Isheta from "@/assets/Testimonials/isheta.png";
 import Kislay from "@/assets/Testimonials/kislay.png";
 import Lavanya from "@/assets/Testimonials/lavanya.jpeg";
 import Mayank from "@/assets/Testimonials/mayank.jpg";
-import Ashutosh from "@/assets/Testimonials/kislay.png";
+import Ashutosh from "@/assets/Testimonials/Ashutosh.jpg";
 import Sarthak from "@/assets/Testimonials/sarthak.jpeg";
 
 // Define the shape of the testimonial data

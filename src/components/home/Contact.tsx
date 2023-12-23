@@ -1,3 +1,4 @@
+"use client";
 import { MdOutlineSms } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
@@ -10,9 +11,37 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
 
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+import { Button } from "@/components/ui/button";
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    console.log(form.current);
+    emailjs
+      .send(
+        "service_d1px4bu",
+        "template_k3prvhn",
+        form.current!,
+        "OmcnBblli6XgtWXWU",
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+
+    e.target.reset();
+  };
+
   return (
-    <section id="contact" className="h-auto bg-dark-2 p-8 md:p-28">
+    <section id="contact" className="h-auto bg-dark-2 bg-opacity-95 p-8 md:px-28 md:py-20">
       <div className="mb-8 flex flex-col items-center">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           Contact Me
@@ -20,7 +49,7 @@ const Contact = () => {
         <div className="mt-1 h-1.5 w-28 rounded-xl bg-cta text-cta md:mt-2 md:h-2.5 md:w-52"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="ml-20">
+        <div className="ml-20 mt-6">
           <h3 className="text-left text-xl font-light text-light-1">
             CONTACT INFO
           </h3>
@@ -76,7 +105,50 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-3"></div>
+        <div className="col-span-2 mx-12">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-2 focus-within:border-cta"
+          >
+            <label htmlFor="name" className="text-lg font-light text-light-1">
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              className="rounded-md border-2 border-light-1 bg-transparent p-2 text-secondary focus:outline-1 focus:outline-cta"
+            />
+            <label htmlFor="email" className="text-lg font-light text-light-1">
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              className="rounded-md border-2 border-light-1 bg-transparent p-2 text-secondary focus:outline-1 focus:outline-cta active:border-cta"
+            />
+            <label
+              htmlFor="message"
+              className="text-lg font-light text-light-1"
+            >
+              Your Message
+            </label>
+            <textarea
+              name="message"
+              rows={6}
+              placeholder="Your Message"
+              required
+              className="rounded-md border-2 border-light-1 bg-transparent p-2 text-secondary focus:border-cta focus:outline-1 focus:outline-cta"
+            ></textarea>
+            <Button type="submit" variant="cta" className="btn btn-primary">
+              Send Message
+            </Button>
+          </form>
+        </div>
       </div>
     </section>
   );

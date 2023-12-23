@@ -6,7 +6,7 @@ import { BsWindow } from "react-icons/bs";
 // Define the About component
 const About = () => {
   return (
-    <section id="about" className="h-auto bg-dark-2 p-8 md:p-28">
+    <section id="about" className="h-auto bg-dark-2 bg-opacity-95 p-8 md:p-28">
       <div className="flex flex-col items-center">
         <h1 className="font-serif text-2xl text-light-1 md:text-5xl ">
           About Me
