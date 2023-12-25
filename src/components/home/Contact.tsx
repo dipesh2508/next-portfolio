@@ -50,10 +50,10 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="mx-8 md:ml-20 mt-6 order-2 md:order-1">
-          <h3 className="text-left text-xl font-light text-light-1">
+          <h3 className="text-center md:text-left text-lg md:text-xl font-light text-light-1">
             CONTACT INFO
           </h3>
-          <h2 className="text-left text-4xl font-semibold text-light-1">
+          <h2 className="text-center md:text-left text-2xl md:text-4xl font-semibold text-light-1">
             GET IN TOUCH
           </h2>
           <div className="m-auto mt-12 flex flex-col items-start gap-6 text-light-1">
