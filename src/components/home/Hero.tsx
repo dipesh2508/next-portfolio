@@ -5,6 +5,7 @@ import hero from "@/assets/Hero.png";
 
 import React from "react";
 import ParticleBackground from "@/components/design/ParticleBackground";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -34,7 +35,9 @@ const Hero = () => {
               {" "}
               <Button>Download CV</Button>
             </a>
+            <Link href="#contact">
             <Button variant="cta">Let&#39;s Talk</Button>{" "}
+            </Link>
           </div>
         </div>
         <div className="mx-8 -mt-16 flex h-72 w-72 items-center justify-center md:mx-0 md:ml-16 md:mt-0 md:h-[500px] md:w-[500px]">
