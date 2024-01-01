@@ -3,25 +3,45 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { MotionDiv } from "@/components/ui/motionDiv";
+
 // Define the properties for the ProjectsCard component
 interface ProjectsCardProps {
-    title: string; // The title of the project
-    src: any; // The source of the project's image
-    href?: string; // The URL to the project (optional)
-    techStack: string; // The technology stack used in the project
+  title: string; // The title of the project
+  src: any; // The source of the project's image
+  href?: string; // The URL to the project (optional)
+  techStack: string; // The technology stack used in the project
+  index: number;
 }
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 // Define the ProjectsCard component
 const ProjectsCard: FC<ProjectsCardProps> = ({
   title,
   src,
   href,
+  index,
   techStack,
 }) => {
   return (
     // Render a Link component that opens in a new tab and navigates to the project's URL or the root URL if no URL is provided
     <Link target="_blank" href={href || "/"}>
-      <div className="flex flex-col gap-3 overflow-hidden overflow-ellipsis rounded-2xl bg-dark-2 text-light-1 opacity-95">
+      <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: index * 0.3,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="flex flex-col gap-3 overflow-hidden overflow-ellipsis rounded-2xl bg-dark-2 text-light-1 opacity-95"
+      >
         <Image
           src={src}
           alt={title}
@@ -37,7 +57,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
             {techStack}
           </div>
         </div>
-      </div>
+      </MotionDiv>
     </Link>
   );
 };

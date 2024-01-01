@@ -1,12 +1,28 @@
 // Import necessary utilities from project's utils
 import { cn } from "@/lib/utils";
+import { MotionDiv } from "@/components/ui/motionDiv";
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 
 // Define the SkillTab component
-const SkillTab = ({ skill }: { skill: string }) => {
+const SkillTab = ({ skill, number }: { skill: string, number: number }) => {
   return (
     // Render a div with a dynamic class name based on the skill
     // The class name includes a border color specific to the skill
-    <div
+    <MotionDiv
+    variants={variants}
+    initial="hidden"
+    transition={{
+      delay: number * 0.2,
+      ease: "easeInOut",
+      duration: 0.2,
+    }}
+    whileInView={{ opacity: 1 }}
+    viewport={{ once: true, amount: 0.5 }}
       className={cn(
         // Common classes for all skills
         "m-0.5 grow rounded-lg bg-dark-1 px-2 py-2 font-sans text-xs font-thin text-light-1 md:m-1 md:px-3 md:text-sm",
@@ -31,7 +47,7 @@ const SkillTab = ({ skill }: { skill: string }) => {
     >
       {/* Render the skill name */}
       {skill}
-    </div>
+    </MotionDiv>
   );
 };
 

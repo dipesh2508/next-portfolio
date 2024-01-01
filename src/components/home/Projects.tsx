@@ -15,13 +15,14 @@ const Projects = () => {
       </div>
 
       <div className="mx-8 mt-8 grid grid-cols-1 gap-4 md:mx-12 md:mt-12 md:grid-cols-4">
-        {projectCardData.map((card) => (
+        {projectCardData.map((card, index) => (
           <ProjectsCard
             href={card.href} // The URL to the project
             key={card.id} // The unique identifier for the project
             title={card.title} // The title of the project
             src={card.imageUrl} // The image URL of the project
             techStack={card.techStack} // The technology stack used in the project
+            index ={index}
           />
         ))}
       </div>

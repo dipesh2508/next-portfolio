@@ -1,4 +1,5 @@
 import SkillTab from "@/components/ui/skillTab";
+import {MotionDiv} from "@/components/ui/motionDiv";
 
 import {
   frontEndData,
@@ -6,6 +7,12 @@ import {
   designData,
   otherData,
 } from "@/constants/skills";
+
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 const Skills = () => {
   return (
@@ -18,52 +25,90 @@ const Skills = () => {
       </div>
       <div className="mx-8 mt-8 grid grid-cols-1 gap-4 md:mx-12 md:mt-12 md:grid-cols-4">
         {/* FrontEnd Skills */}
-        <div className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 0.3,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}
+         className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
           <h3 className="top-0 my-4 text-lg font-semibold text-light-1 md:text-xl">
             FrontEnd Skills
           </h3>
           <div className="flex flex-wrap gap-1">
             {frontEndData.map((index, key) => (
-              <SkillTab key={key} skill={index} />
+              <SkillTab key={key} number={key} skill={index} />
             ))}
           </div>
-        </div>
+        </MotionDiv>
 
         {/* Backend Skills */}
-        <div className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 2,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }} 
+        className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
           <h3 className="top-0 my-4 text-lg font-semibold text-light-1 md:text-xl">
             BackEnd Skills
           </h3>
           <div className="flex flex-wrap gap-1">
             {backEndData.map((index, key) => (
-              <SkillTab key={key} skill={index} />
+              <SkillTab key={key} number={key+9} skill={index} />
             ))}
           </div>
-        </div>
+        </MotionDiv>
 
         {/* Design Skills */}
-        <div className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 3.2,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}  className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
           <h3 className="top-0 my-4 text-lg font-semibold text-light-1 md:text-xl">
             Design Skills
           </h3>
           <div className="flex flex-wrap gap-1">
             {designData.map((index, key) => (
-              <SkillTab key={key} skill={index} />
+              <SkillTab key={key}  number={key+17} skill={index} />
             ))}
           </div>
-        </div>
+        </MotionDiv>
 
         {/* Other Skills */}
-        <div className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
+        <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 5,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}  className="col-span-1 flex flex-col justify-center rounded-xl bg-dark-2 p-4 text-center font-serif opacity-95">
           <h3 className="my-4 text-lg font-semibold text-light-1 md:text-xl">
             Other Skills
           </h3>
           <div className="flex flex-wrap gap-1">
             {otherData.map((index, key) => (
-              <SkillTab key={key} skill={index} />
+              <SkillTab key={key} number={key+27} skill={index} />
             ))}
           </div>
-        </div>
+        </MotionDiv>
       </div>
     </section>
   );

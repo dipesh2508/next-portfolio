@@ -11,6 +11,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
+import { MotionDiv } from "@/components/ui/motionDiv";
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 const Testimonials = () => {
   const [slidesPerView, setSlidesPerView] = useState(3);
 
@@ -33,6 +40,16 @@ const Testimonials = () => {
         <div className="mt-1 h-1.5 w-28 rounded-xl bg-primary text-primary md:mt-2 md:h-2.5 md:w-52"></div>
       </div>
       \{/* Create a Swiper component for a carousel of testimonials */}
+      <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 0.3,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }}>
       <Swiper
         className="text-secondary"
         modules={[Pagination, Autoplay]} //Enable the Pagination and Autoplay modules
@@ -59,6 +76,7 @@ const Testimonials = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      </MotionDiv>
     </section>
   );
 };

@@ -3,6 +3,13 @@ import { FaLaptopCode } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi2";
 import { BsWindow } from "react-icons/bs";
 
+import { MotionDiv } from "@/components/ui/motionDiv";
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
+
 // Define the About component
 const About = () => {
   return (
@@ -36,7 +43,18 @@ const About = () => {
 
           <div className="mt-12 flex flex-col gap-4 md:flex-row">
             {/* Projects */}
-            <div className="opacity-85 mx-8 flex flex-col gap-2 rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0">
+            <MotionDiv
+              variants={variants}
+              initial="hidden"
+              transition={{
+                delay: 0.3,
+                ease: "easeInOut",
+                duration: 0.4,
+              }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="opacity-85 mx-8 flex flex-col gap-2 rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0"
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-teal-900 p-0.5">
                 <FaLaptopCode className="h-10 w-10 text-secondary" />
               </div>
@@ -46,10 +64,19 @@ const About = () => {
               <p className="text-xs font-extralight text-light-1 md:text-base">
                 Developed 15+ projects with various domains like Web Dev and ML.
               </p>
-            </div>
+            </MotionDiv>
 
             {/* Research */}
-            <div className="opacity-85 mx-8 flex flex-col gap-2 rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0">
+            <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 0.6,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }} className="opacity-85 mx-8 flex flex-col gap-2 rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0">
               <div className="h-12 w-12 rounded-lg bg-emerald-800 p-0.5">
                 {" "}
                 <HiAcademicCap className="h-11 w-11 text-primary" />
@@ -61,10 +88,19 @@ const About = () => {
                 Have Written Research Papers on Topics like Geospatial
                 Landslides and Healthcare
               </p>
-            </div>
+            </MotionDiv>
 
             {/* UI/UX */}
-            <div className="opacity-85 mx-8 flex flex-col gap-2  rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0">
+            <MotionDiv
+        variants={variants}
+        initial="hidden"
+        transition={{
+          delay: 0.9,
+          ease: "easeInOut",
+          duration: 0.4,
+        }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.5 }} className="opacity-85 mx-8 flex flex-col gap-2  rounded-xl bg-dark-1 px-4 py-6 backdrop-blur-2xl md:mx-0">
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-purple-900 p-0.5">
                 <BsWindow className="h-10 w-10 text-cta" />
               </div>
@@ -75,7 +111,7 @@ const About = () => {
                 Designed Figma UI/UX for various sites using various design
                 theories.
               </p>
-            </div>
+            </MotionDiv>
           </div>
         </div>
       </div>
