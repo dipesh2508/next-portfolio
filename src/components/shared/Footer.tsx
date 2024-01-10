@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="mx-24 mb-4">
+    <div className="mx-12 md:mx-24 mb-4">
       <hr className="border-dark-2" />
       <div className="mt-4 grid grid-cols-1 px-4 gap-4 md:gap-0 md:grid-cols-2">
-        <div className=" text-left font-extralight text-light-1">
+        <div className=" text-center md:text-left font-extralight text-light-1">
           {" "}
           Dipesh Ranjan &bull; © 2023 All Rights Reserved
         </div>

@@ -40,7 +40,7 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="mx-8 -mt-16 flex h-72 w-72 items-center justify-center md:mx-0 md:ml-16 md:mt-0 md:h-[500px] md:w-[500px]">
+        <div className="mx-auto -mt-16 flex h-72 w-72 items-center justify-center md:mx-0 md:ml-16 md:mt-0 md:h-[500px] md:w-[500px]">
           {" "}
           <Image src={hero} alt="dipesh" loading="lazy" className="transition duration-150 ease-in-out" />
         </div>

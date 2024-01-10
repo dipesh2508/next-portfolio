@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="mt-1 h-1.5 w-28 rounded-xl bg-cta text-cta md:mt-2 md:h-2.5 md:w-52"></div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3">
-        <div className="mx-8 md:ml-20 mt-6 order-2 md:order-1">
+        <div className="mx-8 md:ml-20 mt-16 md:mt-6 order-2 md:order-1">
           <h3 className="text-center md:text-left text-lg md:text-xl font-light text-light-1">
             CONTACT INFO
           </h3>
