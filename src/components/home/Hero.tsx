@@ -2,10 +2,13 @@ import { Button } from "../ui/button";
 import { whisper } from "@/lib/fonts/font";
 import Image from "next/image";
 import hero from "@/assets/Hero.png";
-
-import React from "react";
-import ParticleBackground from "@/components/design/ParticleBackground";
 import Link from "next/link";
+import dynamic from 'next/dynamic';
+
+const ParticleBackground = dynamic(
+  () => import("@/components/design/ParticleBackground"),
+  { ssr: false }
+);
 
 const Hero = () => {
   return (
@@ -41,8 +44,14 @@ const Hero = () => {
           </div>
         </div>
         <div className="mx-auto -mt-16 flex h-72 w-72 items-center justify-center md:mx-0 md:ml-16 md:mt-0 md:h-[500px] md:w-[500px]">
-          {" "}
-          <Image src={hero} alt="dipesh" loading="lazy" className="transition duration-150 ease-in-out" />
+          <Image 
+            src={hero} 
+            alt="Dipesh Ranjan - Web Developer and Designer" 
+            priority
+            quality={75}
+            placeholder="blur"
+            className="transition duration-150 ease-in-out" 
+          />
         </div>
       </section>
       <div className="relative -z-10">

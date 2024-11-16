@@ -1,8 +1,4 @@
-// Import necessary icons from react-icons
-import { FaLaptopCode } from "react-icons/fa";
-import { HiAcademicCap } from "react-icons/hi2";
-import { BsWindow } from "react-icons/bs";
-
+import { aboutCards } from "@/constants/about";
 import { MotionDiv } from "@/components/animations/motionDiv";
 
 const variants = {
@@ -10,34 +6,8 @@ const variants = {
   visible: { opacity: 1 },
 };
 
-const aboutCards = [
-  {
-    icon: FaLaptopCode,
-    iconBg: "bg-teal-900",
-    iconColor: "text-secondary",
-    title: "Development Projects",
-    description: "Developed 15+ projects with various domains like Web Dev and ML.",
-    delay: 0.3,
-  },
-  {
-    icon: HiAcademicCap,
-    iconBg: "bg-emerald-800",
-    iconColor: "text-primary",
-    title: "Research Works",
-    description: "Have Written Research Papers on Topics like Geospatial Landslides and Healthcare",
-    delay: 0.6,
-  },
-  {
-    icon: BsWindow,
-    iconBg: "bg-purple-900",
-    iconColor: "text-cta",
-    title: "UI/UX Designs",
-    description: "Designed UI/UX Files for various sites using various design theories and Figma.",
-    delay: 0.9,
-  },
-];
 
-// Define the About component
+
 const About = () => {
   return (
     <section id="about" className="h-auto bg-dark-2 bg-opacity-95 p-8 md:p-28">
