@@ -6,8 +6,6 @@ const variants = {
   visible: { opacity: 1 },
 };
 
-
-
 const About = () => {
   return (
     <section id="about" className="h-auto bg-dark-2 bg-opacity-95 p-8 md:p-28">
