@@ -1,5 +1,5 @@
 import SkillTab from "@/components/ui/skillTab";
-import { MotionDiv } from "@/components/ui/motionDiv";
+import { MotionDiv } from "@/components/animations/motionDiv";
 
 import {
   frontEndData,
