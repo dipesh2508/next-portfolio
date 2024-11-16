@@ -3,7 +3,7 @@ import { FC } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import { MotionDiv } from "@/components/ui/motionDiv";
+import { MotionDiv } from "@/components/animations/motionDiv";
 
 // Define the properties for the ProjectsCard component
 interface ProjectsCardProps {

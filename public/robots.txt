@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.pdf
+Disallow: /admin/
+
+Sitemap: https://dipeshranjan.vercel.app/sitemap.xml 

@@ -20,7 +20,7 @@ npm install
 ```
 
 step 4: start the project
-```
+```bash
 npm run dev
 ```
 
@@ -30,4 +30,4 @@ The website designed by Dipesh Ranjan on [Figma](https://www.figma.com/file/9tsv
 
 ## Tech Stack
 
-Next JS, Tailwind CSS, Typescript, Framer, Particle JS, Email JS
+Next JS, Tailwind CSS, Typescript, Framer-Motion, Shadcn UI, Particle JS, NodeMailer

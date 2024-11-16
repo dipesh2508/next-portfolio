@@ -1,6 +1,6 @@
 // Import necessary utilities from project's utils
 import { cn } from "@/lib/utils";
-import { MotionDiv } from "@/components/ui/motionDiv";
+import { MotionDiv } from "@/components/animations/motionDiv";
 
 const variants = {
   hidden: { opacity: 0 },

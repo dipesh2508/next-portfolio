@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import { MotionDiv } from "@/components/ui/motionDiv";
+import { MotionDiv } from "@/components/animations/motionDiv";
 
 const variants = {
   hidden: { opacity: 0 },
