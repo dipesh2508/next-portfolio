@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="mt-4 grid grid-cols-1 px-4 gap-4 md:gap-0 md:grid-cols-2">
         <div className=" text-center md:text-left font-extralight text-light-1">
           {" "}
-          Dipesh Ranjan &bull; © 2023 All Rights Reserved
+          Dipesh Ranjan &bull; © 2025 All Rights Reserved
         </div>
         <div className="flex flex-col justify-end gap-4 text-center text-sm text-light-1  md:flex-row md:text-right md:text-base">
           {navLinks.map((link, index) => (

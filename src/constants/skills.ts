@@ -8,7 +8,7 @@ export const frontEndData = [
   "Next JS",
   "Axios",
   "Material UI",
-  "Framer"
+  "Motion.dev"
 ];
 
 export const backEndData = [
@@ -17,10 +17,8 @@ export const backEndData = [
   "MongoDB",
   "Firebase",
   "Prisma",
-  "Next Server Actions",
+  "PostgreSQL",
   "GraphQL",
-
-
   "Next Auth"
 ];
 
@@ -40,11 +38,11 @@ export const otherData = [
   "Git",
   "Docker",
   "SEO",
-  "C++",
+  "Testing",
   "Python",
   "Java",
   "Postman",
   "Documentation",
-  "Research",
+  "Mono-repo",
   "Content Writing"
 ];

@@ -3,7 +3,8 @@ import HealthOptima from "@/assets/HealthOptima.png";
 import Circles from "@/assets/Circles.png";
 // import ChikitsaSalah from "@/assets/ChikitsaSalah.png";
 // import AnimeVault from "@/assets/AnimeVault.png";
-import AnuvaadSangam from '@/assets/AnuvaadSangam.png';
+// import AnuvaadSangam from '@/assets/AnuvaadSangam.png';
+import Projecify from '@/assets/Projecify.png'
 import TheFirstAid from '@/assets/TheFirstAid.png'
 
 // Interface for Data
@@ -21,9 +22,9 @@ export const projectCardData: IProjectSectionCardData[] = [
     id: 1,
     title: "Health Optima",
     techStack:
-      "Next JS 13, Tailwind CSS, Typescript, ShadCN, NextAuth, Zod, EmailJS, MongoDB, Figma",
+      "Next JS 14, Tailwind CSS, Typescript, ShadCN, NextAuth, Zod, MongoDB, Figma",
     imageUrl: HealthOptima,
-    href: "https://github.com/dipesh2508/health-optima",
+    href: "https://healthoptima.in/",
   },
   {
     id: 2,
@@ -31,7 +32,7 @@ export const projectCardData: IProjectSectionCardData[] = [
     techStack:
       "Next JS 13, Tailwind CSS, Typescript, ShadCN, Clerk, Zod, MongoDB, UploadThing",
     imageUrl: Circles,
-    href: "https://github.com/dipesh2508/circles",
+    href: "https://circles-tawny.vercel.app",
   },
   // {
   //   id: 3,
@@ -49,20 +50,28 @@ export const projectCardData: IProjectSectionCardData[] = [
   //   imageUrl: AnimeVault,
   //   href: "https://github.com/dipesh2508/anime_vault",
   // },
-  {
-    id: 5,
-    title: "Anuvaad Sangam",
-    techStack:
-      "Next JS 14, Tailwind CSS, Typescript, Shad CN, Clerk, Next Server Actions, Pusher JS, MongoDB, Google Translation API",
-    imageUrl: AnuvaadSangam,
-    href: "https://github.com/dipesh2508/anuvaad-sangam"
-  },
+  // {
+  //   id: 5,
+  //   title: "Anuvaad Sangam",
+  //   techStack:
+  //     "Next JS 14, Tailwind CSS, Typescript, Shad CN, Clerk, Next Server Actions, Pusher JS, MongoDB, Google Translation API",
+  //   imageUrl: AnuvaadSangam,
+  //   href: "https://github.com/dipesh2508/anuvaad-sangam"
+  // },
   {
     id: 6,
+    title: "Projecify",
+    techStack:
+      "Next JS 14, Tailwind CSS, Typescript, Next-Auth, Zod, Next API, Prisma, PostgreSQL",
+    imageUrl: Projecify,
+    href: "https://projecify.tryntest.in"
+  },
+  {
+    id: 7,
     title: "The First Aid",
     techStack:
-      "Next JS 14, Tailwind CSS, Typescript, Clerk, zod, Webhooks, Next Server Actions, MongoDB",
+      "Next JS 14, Tailwind CSS, Typescript, Clerk, Zod, Motion, Next Server Actions, MongoDB",
     imageUrl: TheFirstAid,
-    href: "https://github.com/dipesh2508/the-first-aid"
+    href: "https://the-first-aid.vercel.app"
   }
 ];
